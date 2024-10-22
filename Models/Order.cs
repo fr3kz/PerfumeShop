@@ -9,11 +9,12 @@ namespace PerfumeShop.Models
         public string ShippingAddress { get; set; }
         public string PaymentMethod { get; set; }
         
-        // Relacja z użytkownikiem
         public int UserId { get; set; }
         public User User { get; set; }
+        
+        
 
-        // Relacja z produktami
+        
         public ICollection<Item> OrderItems { get; set; }
     }
 }
